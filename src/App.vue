@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    Apple
+    <router-link to="/news/detail/:newsId">News</router-link>-
+    <router-link to="/iPad">iPad</router-link>-
+    <router-link to="/iPhone">iPhone</router-link>-
+    <router-link to="/API">Watch</router-link>-
+    <router-link to="/AirPods">AirPods</router-link>-
+    <router-link to="/youtube/:videoId">Youtube</router-link>-
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
+  },
+  data(){
+    return{
+
+    }
   }
 }
 </script>
